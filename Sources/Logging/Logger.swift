@@ -8,7 +8,9 @@
 import Foundation
 import Pulse
 
-nonisolated(unsafe) let session: URLSessionProtocol = URLSessionProxy(configuration: .default)
+enum URLSessionProvider {
+    nonisolated(unsafe) static let session: URLSessionProtocol = URLSessionProxy(configuration: .default)
+}
 //let session: URLSessionProtocol = URLSessionProxy(configuration: .default)
 
 //public struct Logger {
