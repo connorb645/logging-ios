@@ -8,6 +8,7 @@
 import Foundation
 import Pulse
 
+public typealias LoggerURLSessionProtocol = URLSessionProtocol
 public enum URLSessionProvider {
     nonisolated(unsafe) public static let session: URLSessionProtocol = URLSessionProxy(configuration: .default)
 }
