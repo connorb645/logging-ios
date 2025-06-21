@@ -42,7 +42,7 @@ public struct ErrorEvent: LoggableEvent {
 }
 
 public protocol LoggableEvent {
-    func log()
+    public func log()
 }
 
 public enum Analytics {
